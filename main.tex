@@ -1,5 +1,30 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codebg}{rgb}{0.97,0.97,0.97}
+\definecolor{codekw}{rgb}{0.15,0.15,0.60}
+\definecolor{codestr}{rgb}{0.60,0.10,0.10}
+\definecolor{codecom}{rgb}{0.10,0.50,0.10}
+\definecolor{codenm}{rgb}{0.35,0.35,0.35}
+
+\lstdefinestyle{vscode}{
+  backgroundcolor=\color{codebg},
+  basicstyle=\ttfamily\small,
+  numbers=left,
+  numberstyle=\tiny\color{codenm},
+  frame=single,
+  rulecolor=\color{codenm},
+  breaklines=true,
+  tabsize=2,
+  showstringspaces=false,
+  keywordstyle=\bfseries\color{codekw},
+  commentstyle=\itshape\color{codecom},
+  stringstyle=\color{codestr}
+}
+
+\lstset{style=vscode}
 
 
 \title{C++ Programming Fundamentals}
@@ -17,10 +42,14 @@
 \section{Module}
 \subsection{Introduction to C++ Syntax and Structure}
 \subsubsection{The Anatomy of "Hello, World!"}
-\paragraph{The "Hello, World!" is synonymous in the programming world and is most often the first step for any new programmer, including myself. Despite its simplicity, it ultimately lays the groundwork for essentially understanding the premise of how C++ programs are structured.}
+
+The "Hello, World!" is synonymous in the programming world and is most often the first step for any new programmer, including myself. Despite its simplicity, it ultimately lays the groundwork for understanding the fundamental structure of C++ programs. The program's task is relatively singular: it outputs "Hello, World!" to the console. This is the surface of the building blocks of C++ projects.
 
 
 
+Here is the snippet of the code: 
+
+\lstinputlisting[language=C++]{helloworld.cpp}
 
 
 
