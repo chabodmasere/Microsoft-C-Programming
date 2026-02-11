@@ -39,27 +39,43 @@
 \end{figure}
 \maketitle
 
-\section{Module}
-\subsection{Introduction to C++ Syntax and Structure}
-\subsubsection{The Anatomy of "Hello, World!"}
+\section{Introduction to C++ Syntax and Structure}
+\subsection{The Anatomy of "Hello, World!"}
 
 The "Hello, World!" is synonymous in the programming world and is most often the first step for any new programmer, including myself. Despite its simplicity, it ultimately lays the groundwork for understanding the fundamental structure of C++ programs. The program's task is relatively singular: it outputs "Hello, World!" to the console. This is the surface of the building blocks of C++ projects.
-
 
 
 Here is the snippet of the code: 
 
 \lstinputlisting[language=C++]{helloworld.cpp}
 
+\newpage
+\subsubsection{Core Components of a C++ Program}
+\textbf{Preprocessor Directive (\texttt{\#include <iostream>})}
 
 
+The line \texttt{\#include <iostream>} instructs the compiler to include the standard input-output stream library, which provides essential functions for displaying data. The directive is analogous to borrowing tools from a library for use within the project.
 
+\subsubsection{Main Function (int main()):}
+Every C++ program revolves around the main function. It acts as the entry point, where the program begins execution. Without it, the C++ application remains inactive. 
 
+\subsubsection{Output Operation (\texttt{std::cout << "Hello, World!" << std::endl;})}
 
+This is the line that sends the output to the console. This line is pretty much where the "magic" happens. It displays "Hello, World!" in the terminal. 
 
+\begin{itemize}
+    \item \texttt{std::cout}: The standard output stream object that sends data to the console.
+    \item \texttt{<<}: The stream insertion operator that directs data into the output stream.
+    \item \texttt{"Hello, World!"}: The string literal to be displayed.
+    \item \texttt{<< std::endl;}: Inserts a newline character and flushes the output buffer.
+\end{itemize}
 
+\subsubsection{Return Statement (return 0;):}
 
+The return 0; statement concludes the main function, sending a status code of 0 to the operating system to signify successful execution (zero errors).
 
+\subsection{Development Cycle: Translating Code to Execution}
+To start writing C++ code, here is the step-by-step execution pattern:
 
 
 
